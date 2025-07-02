@@ -24,6 +24,12 @@ nasm -f elf32 file.asm -o file.o
 ld -m elf_i386 file.o -o file
 ```
 
+or using script
+
+```bash
+./asmc32.sh file.asm
+```
+
 ### Run
 
 ```bash
@@ -33,9 +39,8 @@ ld -m elf_i386 file.o -o file
 ### Full Example
 
 ```bash
-nasm -f elf32 hello_world.asm -o hello_world.o
-ld -m elf_i386 hello_world.o -o hello_world
-./hello_world
+./asmc32.sh helloworld.asm
+./helloworld
 ```
 
 ## 📚 Intel Syntax
